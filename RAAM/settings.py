@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'RAAM.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql9586704',
-        'USER': 'sql9586704',
-        'PASSWORD': '3em13bpDD7',
-        'HOST': 'sql9.freesqldatabase.com',
+        'NAME': 'raam',
+        'USER': 'linroot',
+        'PASSWORD': 'HiqBgB0Flqs$9XM2',
+        'HOST': 'lin-13756-8184-mysql-primary.servers.linodedb.net',
         'PORT': '3306',
     }
 }
