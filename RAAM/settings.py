@@ -88,14 +88,10 @@ WSGI_APPLICATION = 'RAAM.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sql9586704',
-        'USER': 'sql9586704',
-        'PASSWORD': '3em13bpDD7',
-        'HOST': 'sql9.freesqldatabase.com',
-        'PORT': '3306',
-    }
+    'default': dj_database_url.config(
+        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        conn_max_age=600 
+    )    
 }
 
 
