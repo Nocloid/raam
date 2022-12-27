@@ -93,7 +93,7 @@ DATABASES = {
         'NAME': 'raam',
         'USER': 'linroot',
         'PASSWORD': 'HiqBgB0Flqs$9XM2',
-        'HOST': 'lin-13756-8184-mysql-primary.servers.linodedb.net',
+        'HOST': 'lin-13756-8184-mysql-primary-private.servers.linodedb.net',
         'PORT': '3306',
         'SSL': 'ENABLED'
     }
