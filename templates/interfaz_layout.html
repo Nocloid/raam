@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RAAM SPA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static '/img/Logo.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/normalize.css' %}">
+    {% block css %}
+
+    {% endblock %}
+    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="hero">
+    <nav class="nav container">
+        <div class="header-nav">
+            <div class="logo">
+                <div class="logo-imagen" alt="Logo de la marca"></div>
+            </div>
+        </div>
+        {% url 'Inicio' as ini %}
+        {% url 'Nosotros' as nos %}
+        {% url 'Proyectos' as pro %}
+        {% url 'Galeria' as gal %}
+        {% url 'Contactos' as con %}
+
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="{{ ini }}"class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="{{ nos }}"class="nav__links">Nosotros</a>
+            </li>
+            <li class="nav__items">
+                <a href="{{ pro }}"  class="nav__links">Proyectos</a>
+            </li>
+            <li class="nav__items">
+                <a href="{{ gal }}" class="nav__links">Galeria</a>
+            </li>
+            <li class="nav__items">
+                <a href="{{ con }}"  class="nav__links">Contacto</a>
+            </li>
+            <img src="{% static './img/close.svg' %}" class="nav__close">
+        </ul>
+
+        <div class="nav__menu">
+            <img src="{% static './img/menu.svg' %}" class="nav__img">
+        </div>
+    </nav>
+
+    <section class="hero__container container">
+        {% if request.get_full_path == ini %}
+        <h1 class="hero__title">
+            ¡Bienvenidos!
+        </h1>
+        {% elif request.get_full_path == nos %}
+        <h1 class="hero__title">
+            Nosotros
+        </h1>
+        {% elif request.get_full_path == pro %}
+        <h1 class="hero__title">
+            Proyectos
+        </h1>
+        {% elif request.get_full_path == gal %}
+        <h1 class="hero__title">
+            Galeria
+        </h1>
+        {% elif request.get_full_path == con %}
+        <h1 class="hero__title">
+            Contactanos
+        </h1>
+        {% else %}
+        <h1 class="hero__title">
+            Galeria
+        </h1>
+        {% endif %}
+        <p class="hero__paragraph"></p>
+    </section>
+</header>
+{% block content %}
+{% endblock %}
+<footer class="footer">
+    <div class="container">
+        <a href="{% url 'Inicio' %}" title="" class="footer-logo">
+            <img src="{% static '/img/logo2_mini.png'%}"
+            alt="Logo"
+            class="footer-logo-img">
+        </a>
+        <ul class="contact-listing">
+            <li class="contact-listing-item">
+                <address class="address">
+                    <p>Marisol Angel</p>
+                    <p>Teléfono: +56 9 96242604</p>
+                    <p>Correo: mangel@fibrasraam.cl</p>
+                </address>
+            </li>
+            <li class="contact-listing-item">
+                <address class="address">
+                    <p>Rafael Guzman</p>
+                    <p>Teléfono: +56 9 95450823</p>
+                    <p>Correo: rguzman@fibrasraam.cl</p>
+                </address>
+            </li>
+        </ul>
+        <ul class="contact-listing">
+            <li class="contact-listing-item">
+                <a href="{% url 'Nosotros' %}"
+                title="Nosotros"
+                class="contact-listing-link"><img src="{% static 'img/ubicacion.svg' %}"
+                                            title="Nosotros"
+                                            class="contact-listing-icon">Nosotros</a>
+            </li>
+            <li class="contact-listing-item">
+                <a href="{% url 'Proyectos' %}"
+                title="Proyectos"
+                class="contact-listing-link"><img src="{% static 'img/proyectos.svg' %}"
+                                            title="Proyectos"
+                                            class="contact-listing-icon">Nuestros proyectos</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="{% static 'interfaz_principal/js/questions.js' %}"></script>
+<script src="{% static 'interfaz_principal/js/slider.js' %}"></script>
+<script src="{% static 'interfaz_principal/js/menu.js' %}"></script>
+</body>
+</html>

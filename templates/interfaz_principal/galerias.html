@@ -1,0 +1,44 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/syles.css' %}">
+{% endblock %}
+{% block content %}
+    <article class="questions__padding">
+        <div class="questions__answer">
+            <h3 class="questions__title">industrial
+            </div>
+            </h3>
+                </article>
+    <main>
+        <div class="gallery-container">
+            {% for i in posts %}
+                {% if i.sector == 1 %}
+                <a href="{% url 'posts' id=i.id %}" class="gallery-items">
+                    <img src="{{ i.imagen.url }}" alt="{{ i.nombre }}">
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </main>
+    <br>
+    <article class="questions__padding">
+        <div class="questions__answer">
+            <h3 class="questions__title">Privado</h3>
+        </div>
+    </article>
+    <br>
+    <main>
+        <div class="gallery-container">
+            {% for i in posts %}
+                {% if i.sector == 0 %}
+                <a href="{% url 'posts' id=i.id %}" class="gallery-items">
+                    <img src="{{ i.imagen.url }}" alt="{{ i.nombre }}">
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>        
+    </main>
+    <br><br><br><br><br><br>
+</section>
+ {% endblock %}

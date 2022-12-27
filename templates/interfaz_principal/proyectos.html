@@ -1,0 +1,190 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/nosotrosestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos3.css' %}">
+{% endblock %}
+{% block content %}
+       <!-- Start About Section -->
+       <section class="knowledge">
+        <div class="knowledge__container container">
+            <div class="knowledege__texts">
+                <h2 class="subtitle">Proyecto  entregado a división codelco  norte - ct radomiro tomic - octubre 2009</h2>
+                <p class="knowledge__paragraph"><span class="testimony__course">PROYECTO :</span> Fabricación íntegramente en plástico reforzado de 5 estanques para re circulación de electrolito.</p>
+                <p class="knowledge__paragraph">
+                    <span class="testimony__course">FIBRAS RAAM :</span>para la ejecución de este y otros proyectos, 
+                    cuenta con profesionales y técnicos con basta experiencia en el diseño y 
+                </p>
+            </div>
+            <figure class="knowledge__picture">
+                <img src="{% static './img/pro1.png' %}" c blass="knowledge__img">
+            </figure>
+        </div>
+    </section>
+    
+        
+    
+    
+    
+    <section class="knowledge">
+        <div class="knowledge__container container">
+            <div class="knowledege__texts">
+                    <img src="{% static './img/pro2.png' %}" class="knowledge__img">            
+            </div>
+            <figure class="knowledge__picture">
+                <h2 class="subtitle">Planta recicladora de agua , móvil - seltek iquique
+                </h2>
+                <p class="knowledge__paragraph"><span class="testimony__course">PROYECTO :</span>
+                    Revestimiento térmico de contenedor con poliuretano expandido y FRPV, 
+                    y construcción en interior de sistema de reciclado de agua con estanque
+                    de FRPV para empresa Seltek de Iquique.
+                </p>
+            </figure>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="knowledge">
+        <div class="knowledge__container container">
+            <div class="knowledege__texts">
+                <h2 class="subtitle">Proyecto estanque en frp cilindrico vertical    para aguas servidas  - minera el abra  - febrero 2020
+                </h2>
+                <p class="knowledge__paragraph"><span class="testimony__course">PROYECTO :</span>Fabricación íntegramente en plástico reforzado con maquina filament winding  				       estanques de 60m3 para tratamiento de aguas servidas con estructuras metálicas.
+                    Fabricación íntegramente en plástico
+                     reforzado de 5 estanques para re circulación de electrolito.</p>
+                <p class="knowledge__paragraph">
+                    <span class="testimony__course">FIBRAS RAAM :</span>para la ejecución de este y otros proyectos, cuenta con profesionales y 
+                    técnicos con basta experiencia en el diseño y fabricación de equipos, partes y piezas en plástico reforzado y acero.
+
+                    
+                </p>
+     
+            </div>
+    
+            <figure class="knowledge__picture">
+                <img src="{% static './img/pro3.jpg' %}" class="knowledge__img">
+            </figure>
+        </div>
+    </section>
+    <section class="testimony">
+        <div class="testimony__container container">
+            <img src="{% static './img/leftarrow.svg'%}" class="testimony__arrow" id="before">
+    
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Frabricación De Productos Especiales<span class="testimony__course">Estanques 50 M3 DMH Codelco 
+                    </span></h2>
+                    <p class="testimony__review"></p>
+                </div>
+    
+                <figure class="testimony__picture">
+                    <img src="{% static './img/pe1.jpg'%}" class="testimony__img">
+                </figure>
+            </section>
+    
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Frabricación De Productos Especiales <span class="testimony__course">Estanque 60 M3
+    
+                    </span></h2>
+                </div>
+    
+                <figure class="testimony__picture">
+                    <img src="{% static './img/pe2.png'%}"class="testimony__img">
+                </figure>
+            </section>
+            
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Frabricación De Productos Especiales<span class="testimony__course">Estanque 120 M3
+                    </span></h2>
+                </div>
+    
+                <figure class="testimony__picture">
+                    <img src="{% static './img/pe3.png'%}" class="testimony__img">
+                </figure>
+            </section>
+    
+            <section class="testimony__body" data-id="4">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Frabricación De Productos Especiales <span class="testimony__course">Planta de Tratamiento de Aguas Servidas.
+                    </span></h2>
+                </div>
+    
+                <figure class="testimony__picture">
+                    <img src="{% static './img/pe4.png'%}" class="testimony__img">
+                </figure>
+            </section>
+    
+    
+            <img src="{% static './img/rightarrow.svg'%}" class="testimony__arrow" id="next">
+        </div>
+    </section>
+    
+
+
+
+
+
+<section class="menu contenedor">
+        <h2 class="texto-platillos">Servicios</h2>
+        <br>
+        <div class="platillos">
+            <div class="platillo" data-platillo="ensalada">
+                <img src="{% static './img/pr1.jpg' %}" alt="ensalada">
+                <h2>Diseño y Fabricación en Plasticos Reforzados con fibra de vidrio</h2>
+                <br>
+                <p>Fibras RAAM fabrica con fibras de vidrio</p>
+                <br>
+                <p><span></span> horizontales y verticales con geometrías:</p> 
+                <br>
+                    <p>Cilíndricas, Rectangular y Troncocónica.</p>
+                    <br>
+                        <p>Ductos, Tuberías, Codos, TEE, Bridas.</p>
+                        <br>
+                            <p>Piezas Especiales: Dumpers, Válvulas,etc.</p>
+            </div>
+            
+            <div class="platillo" data-platillo="ensalada">
+                <img src="{% static './img/pr2.jpg' %}" alt="ensalada">
+                <h2>Equipos y Accesorios para procesos.</h2>
+                <br>
+                <p>Fibras RAAM fabrica equipos y accesorios para procesos como:</p>
+                <br>
+                <p><span></span> Planta SX, Conjuntos estanques mezcladores.</p> 
+                <br>
+                    <p>Decantadores, Pickets Fences y Reguladores de flujo.</p>
+                    <br>
+                        <p>Plantas para tratamientos de aguas servidas domiciliarias e industriales.</p>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="{% static './img/pr3.png' %}"alt="ensalada">
+                <h2>Diseño y Fabricación de Acero</h2>
+                <br>
+                <p>Fibras RAAM fabrica equipos y accesorios para procesos como:</p>
+                <br>
+                <p><span></span>Liviana.</p>
+                <br>
+                    <p>Mediana.</p>
+                    <br>
+                        <p>Semi Pesada.</p>
+            </div>
+            <div class="platillo" data-platillo="ensalada">
+                <img src="{% static './img/pr4.png' %}" alt="ensalada">
+                <h2>Servicios Varios</h2>
+                <br>
+                <p>Se Realiza Fabricación, Mantención y Reparación integral de:</p>
+                <br>
+                <p><span></span>Válvulas, Ductos de FRP, Torres de Enfrentamiento,Torres de Lavado.</p>
+                <br> 
+                    <p>Fabricación, Mantención y Recubrimientos de pisos, canelas.</p>
+                    <br>
+                        <p>Fabricación de plantas SX.</p>
+            </div>
+        </div>
+        <br>
+    </section>
+{% endblock %}

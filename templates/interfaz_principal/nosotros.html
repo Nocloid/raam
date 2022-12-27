@@ -1,0 +1,98 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/nosotrosestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos3.css' %}">
+{% endblock %}
+{% block content %}
+<section class="knowledge">
+    <div class="knowledge__container container">
+        <div class="knowledege__texts">
+            <h2 class="subtitle">RAAM spa</h2>
+            <p class="knowledge__paragraph">es una empresa Calameña especializada en 
+                soluciones integrales y servicios en plástico reforzado en fibras de vidrio,
+                 polietilenos de alta densidad y revestimientos para el sector minero e industrial
+                del norte de Chile, que se distingue de sus pares por la entrega de un servicio,
+                oportuno y acorde a las necesidades reales de cada uno de sus clientes.
+            </p>
+ 
+        </div>
+
+        <figure class="knowledge__picture">
+            <img src="{% static './img/Pn1.png'%}" class="knowledge__img">
+        </figure>
+    </div>
+</section>
+
+    
+
+
+
+<section class="knowledge">
+    <div class="knowledge__container container">
+        <div class="knowledege__texts">
+                <img src="{% static './img/pn2.png'%}" class="knowledge__img">
+
+
+        </div>
+
+        <figure class="knowledge__picture">
+            <h2 class="subtitle">Nuestra experiencia</h2>
+            <p class="knowledge__paragraph">Tenemos la experiencia y 
+                los conocimientos para responder a las necesidades reales de
+                 cada uno de nuestros clientes, ya que nos especializamos en la 
+                 entrega de soluciones innovadoras y de larga duración, capaces de agregar 
+                 valor al negocio de cada cliente.
+
+            </p>
+        </figure>
+    </div>
+</section>
+       
+    
+<section class="knowledge">
+    <div class="knowledge__container container">
+        <div class="knowledege__texts">
+            <h2 class="subtitle">Nuestra Especializada</h2>
+            <p class="knowledge__paragraph">
+                Nos especializamos en soluciones y servicios en FRP , H.D.P.E.,  P.V.D.F. y
+                 Acero, así como también fabricamos Plantas SX, Torres de enfriamiento, 
+                 Pipping de H.D.P.E. entre otros, garantizando a nuestros clientes la prestación 
+                 de un servicio integral de acuerdo a sus necesidades reales,
+                 con elevados estándares de seguridad, medio ambiental y calidad.
+            </p>
+ 
+        </div>
+
+        <figure class="knowledge__picture">
+            <img src="{% static './img/pn3.jpg'%}" class="knowledge__img">
+        </figure>
+    </div>
+</section>
+
+
+
+
+<section class="knowledge">
+    <div class="knowledge__container container">
+        <div class="knowledege__texts">
+                <img src="{% static './img/pn4.png'%}"class="knowledge__img">
+        </div>
+
+        <figure class="knowledge__picture">
+            <h2 class="subtitle">Algunos de Nuestros Principales Clientes
+            </h2>
+            <p class="knowledge__paragraph">*Ilustre Municipalidad de Calama.</p>
+                <p class="knowledge__paragraph"></p>*CODELCO División Chuquicamata.</p>
+                <p class="knowledge__paragraph"></p>*Codelco División Radomiro Tomic.</p>
+                <p class="knowledge__paragraph"></p>*Soc. Contractual Minera EL ABRA.</p>
+                <p class="knowledge__paragraph"></p>*IGAL Tecnología Limitada.</p>
+                <p class="knowledge__paragraph"></p>*Grupo Minera Las Cenizas.</p>
+                <p class="knowledge__paragraph"></p>*ENGIE Chile.</p>
+            
+        </figure>
+    </div>
+</section>
+
+
+{% endblock %}

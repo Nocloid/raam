@@ -1,0 +1,46 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos2.css' %}">
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos3.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="content">
+        <section class="knowledge">
+            <div class="knowledg__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitlee">RAAM spa</h2>
+                    <h1 class="logo" >¡Contáctenos! Queremos Saber de <span>Ud.</span></h1>
+        </section>
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <p class="block">
+                    <button type="submit" name="envio_contacto" >
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4>Más información</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i>  Luis callejas sitio nº1 mz-a  barrio industrial, Calama</li>
+                <br>
+                <li><i class="fas fa-phone"></i> +56 9 5450823</li>
+                <br>
+                <li><i class="fas fa-envelope-open-text"></i> rguzman@fibrasraam.cl</li>
+            </ul>
+            <p>RAAMspa.com</p>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <section class="knowledge">
+        <div class="knowledg__container container">
+            <div class="knowledege__texts">
+            </div>
+        </div>
+{% endblock %}

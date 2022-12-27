@@ -1,0 +1,174 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos.css' %}">
+{% endblock %}
+{% block content %}
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">20 Años en el norte del país innovando soluciones de Servicio y Productos de Optima Calidad</h2>
+            <p class="about__paragraph"></p>
+
+            <div class="about__main">
+                <div class="ratio ratio-16x9">
+                    <iframe    width="450px" height= "350px"src="https://www.youtube.com/embed/FLuDSEOtkOo" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">¿Quienes somos?</h2>
+                    <p class="knowledge__paragraph">Somos una empresa Calameña especializada en 
+                        soluciones integrales y servicios en plástico reforzado en fibras de vidrio, 
+                        polietilenos de alta densidad
+                         y revestimientos para el sector minero e industrial del norte de Chile. 
+                    </p>
+                    <a href="{% url 'Nosotros' %}" class="cta">Más Información</a>
+                </div>
+                <figure class="knowledge__picture">
+                    <img src="{% static 'img/pn1.png'%}"class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+        <section class="price container">
+            <h2 class="subtitle">Nuestros Programas</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <h3 class="price__price">Sector Industrial</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Flexbox</p>
+                        <p class="price__features">Layouts</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="{% url 'Proyectos' %}" class="price__cta">Más Información</a>
+                </div>
+
+
+                <div class="price__element price__element--best">
+                    <h3 class="price__price">Sector Minero</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Grid</p>
+                        <p class="price__features">Implicit Grid</p>
+                        <p class="price__features">Responsive</p>
+                    </div>
+
+                    <a href="{% url 'Proyectos' %}" class="price__cta">Más Información</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="{% static 'img/leftarrow.svg'%}" class="testimony__arrow" id="before">
+
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Frabricación De Productos Especiales<span class="testimony__course">Estanques 50 M3 DMH Codelco 
+                        </span></h2>
+                        <p class="testimony__review"></p>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static 'img/pe1.jpg'%}" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Frabricación De Productos Especiales <span class="testimony__course">Estanque 60 M3
+
+                        </span></h2>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static 'img/pe2.png'%}"class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Frabricación De Productos Especiales<span class="testimony__course">Estanque 120 M3
+                        </span></h2>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static 'img/pe3.png'%}" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Frabricación De Productos Especiales <span class="testimony__course">Planta de Tratamiento de Aguas Servidas.
+                        </span></h2>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="{% static 'img/pe4.png'%}" class="testimony__img">
+                    </figure>
+                </section>
+
+
+                <img src="{% static 'img/rightarrow.svg'%}" class="testimony__arrow" id="next">
+            </div>
+        </section>
+
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿xxxxx?
+                            <span class="questions__arrow">
+                                <img src="{% static 'img/arrow.svg'%}" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                        </p>
+                    </div>
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿xxxxx?
+                            <span class="questions__arrow">
+                                <img src="{% static './img/arrow.svg'%}" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                        </p>
+                    </div>
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿xxxx?
+                            <span class="questions__arrow">
+                                <img src="{% static './img/arrow.svg'%}" class="questions__img">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                            facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                            eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                            amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                            nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                            quam atque?
+                        </p>
+                    </div>
+                </article>
+            </section>
+    </main>
+{% endblock %}

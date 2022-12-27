@@ -1,0 +1,38 @@
+{% extends 'interfaz_layout.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/nosotrosestilo.css' %}">
+    <link rel="stylesheet" href="{% static 'interfaz_principal/css/estilos3.css' %}">
+    <link rel="stylesheet" href="{% static 'posts/css/main.css' %}">
+{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<section class="set">
+    <div class="card">
+        {% if posts.imagen %}
+        <div class="face front">
+            <img class="post-pic" src="{{ posts.imagen.url }}" width="400px" height="400px">
+            <h3>{{ posts.nombre }}</h3>
+        </div>
+            <div class="face back">
+                <h3>{{ posts.nombre }}</h3>
+
+            <p>{{ posts.descripcion }}</p>
+            <p>{{ posts.fecha }}</p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
