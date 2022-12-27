@@ -89,10 +89,12 @@ WSGI_APPLICATION = 'RAAM.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': dj_database_url.config(
-            default='postgresql://postgres:postgres@localhost:5432/mysite',
-            conn_max_age=600
-        )
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sql9586704',
+        'USER': 'sql9586704',
+        'PASSWORD': '3em13bpDD7',
+        'HOST': 'sql9.freesqldatabase.com',
+        'PORT': '3306',
     }
 }
 
